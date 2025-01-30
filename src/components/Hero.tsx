@@ -1,3 +1,4 @@
+import Brands from "./Brands";
 import Button from "./reusable/Button";
 
 export default function Hero() {
@@ -21,8 +22,11 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div className="w-full mt-10">
+      <div className="w-full mt-16">
         <img src="https://cdn-web.infobip.com/uploads/2024/12/header-hero-home-page.png" />
+      </div>
+      <div className="w-full flex items-center justify-center mt-24">
+        <Brands />
       </div>
     </div>
   );
