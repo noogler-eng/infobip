@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { MoveRight } from "lucide-react";
 
 export default function Card({
   data,
@@ -20,8 +21,15 @@ export default function Card({
       <p className="bg-orange-600 rounded-lg px-1 py-1 text-sm">{data.title}</p>
       <h1 className="text-3xl">{data.heading}</h1>
       <p className="flex-grow">{data.des}</p>{" "}
-      <Link to={data.link} className="w-fit self-start">
-        Explore {"->"}
+      <Link
+        to={data.link}
+        className="w-fit self-start flex items-center gap-2 group"
+      >
+        Explore
+        <MoveRight
+          size={20}
+          className="transition-transform duration-300 group-hover:rotate-[-30deg] group-hover:bg-orange-600 group-hover:rounded-full group-hover:p-1"
+        />
       </Link>
     </div>
   );
