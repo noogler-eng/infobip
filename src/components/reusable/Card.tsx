@@ -15,7 +15,7 @@ export default function Card({
 }) {
   return (
     <div
-      className={`flex flex-col items-start gap-5 border border-black rounded-xl p-2 shadow-lg ${data.shadow}`}
+      className={`flex flex-col items-start gap-5 rounded-xl p-2 shadow-lg ${data.shadow} bg-white`}
     >
       <img src={data.image} className="rounded-xl overflow-y-hidden max-w-60" />
       <p className="bg-orange-600 rounded-lg px-1 py-1 text-sm">{data.title}</p>

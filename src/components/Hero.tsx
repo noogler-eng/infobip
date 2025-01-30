@@ -32,7 +32,10 @@ export default function Hero() {
       <div className="w-full flex items-center justify-center mt-24">
         <CardsBar />
       </div>
-      <div className="w-full flex items-center justify-center mt-24"></div>
+      <div className="w-full flex items-center justify-center mt-24">
+        <h1>Build any use case or conversational scenario</h1>
+        
+      </div>
     </div>
   );
 }
