@@ -1,4 +1,5 @@
 import Brands from "./Brands";
+import CardsBar from "./CardsBar";
 import Button from "./reusable/Button";
 
 export default function Hero() {
@@ -28,6 +29,10 @@ export default function Hero() {
       <div className="w-full flex items-center justify-center mt-24">
         <Brands />
       </div>
+      <div className="w-full flex items-center justify-center mt-24">
+        <CardsBar />
+      </div>
+      <div className="w-full flex items-center justify-center mt-24"></div>
     </div>
   );
 }
