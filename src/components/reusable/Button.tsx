@@ -17,7 +17,7 @@ export default function Button({
           ? "bg-orange-600 rounded-xl py-4 px-4 font-medium"
           : variant == "VAR2"
           ? "border border-black rounded-xl py-4 px-4 font-medium"
-          : ""
+          : "bg-black text-white font-semibold py-4 px-4 rounded-xl"
       }`}
     >
       {text}
