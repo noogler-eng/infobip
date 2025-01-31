@@ -1,8 +1,10 @@
 import Brands from "./Brands";
 import CardsBar from "./CardsBar";
+import CodeSoln from "./CodeSoln";
 import FeatureBox from "./FeatureBox";
 import ProductsBox from "./ProductsBox";
 import Button from "./reusable/Button";
+import Services from "./Services";
 
 export default function Hero() {
   return (
@@ -46,7 +48,7 @@ export default function Hero() {
         </h1>
         <ProductsBox />
       </div>
-      <div className="mt-24"></div>
+      <CodeSoln />
     </div>
   );
 }
