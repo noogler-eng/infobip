@@ -9,7 +9,7 @@ export default function FeatureBox() {
   const [subCategoryIndex, setSubCatgoryIndex] = useState<number>(0);
 
   return (
-    <div className="w-full rounded-xl bg-indigo-200 py-8 px-16 flex flex-col items-center min-h-[600px]">
+    <div className="w-5/6 rounded-xl bg-indigo-200 py-8 px-16 flex flex-col items-center h-[650px]">
       <CategoryBox
         category={category}
         setCategory={setCategory}

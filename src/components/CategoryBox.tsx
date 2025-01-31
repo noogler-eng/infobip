@@ -15,7 +15,7 @@ export default function CategoryBox({
       {data.map((item, index) => {
         return (
           <button
-            className={`w-full py-2 px-2 w-fit rounded-xl ${
+            className={`w-fit px-2 rounded-lg py-1 ${
               category == index ? "bg-gray-200" : "hover:bg-gray-100"
             }`}
             key={index}
