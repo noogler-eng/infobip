@@ -1,6 +1,7 @@
 import Brands from "./Brands";
 import CardsBar from "./CardsBar";
 import FeatureBox from "./FeatureBox";
+import ProductsBox from "./ProductsBox";
 import Button from "./reusable/Button";
 
 export default function Hero() {
@@ -38,6 +39,12 @@ export default function Hero() {
           Build any use case or conversational scenario
         </h1>
         <FeatureBox />
+      </div>
+      <div className="w-full flex flex-col items-center justify-center mt-24 gap-12">
+        <h1 className="text-5xl w-5/12 font-light text-center">
+          Easy-to-use cloud products for marketing, sales, and support
+        </h1>
+        <ProductsBox />
       </div>
       <div className="mt-24"></div>
     </div>
