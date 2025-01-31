@@ -3,6 +3,8 @@ import data from "../data/codeData";
 import { useState } from "react";
 import CodeButton from "./reusable/CodeButtons";
 import Button from "./reusable/Button";
+import productData from "../data/productDes";
+import { Link } from "react-router-dom";
 
 export default function CodeSoln() {
   const [platform, setPlatform] = useState<number>(0);
@@ -67,6 +69,20 @@ export default function CodeSoln() {
             <Button text="Explore apis ->" handel={() => {}} variant="VAR1" />
           </div>
         </div>
+      </div>
+      <div className="flex justify-between px-16 gap-12 items-center">
+        {productData.map((item, index) => {
+          return (
+            <div
+              key={index}
+              className="flex flex-col gap-8 text-white text-start"
+            >
+              <h1 className="text-4xl">{item.heading}</h1>
+              <p>{item.des}</p>
+              <Link to={item.link}>{item.linkName}</Link>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
