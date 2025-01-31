@@ -36,7 +36,7 @@ export default function Navbar() {
 
   return (
     <div className="w-full px-16 fixed z-10">
-      <div className="backdrop-blur-sm bg-white/30">
+      <div className="backdrop-blur-sm bg-white/70">
         <div className="flex justify-between p-1 items-center">
           <div className="text-xs flex gap-6">
             <Link to="/">SERVICE STATUS</Link>
