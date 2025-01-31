@@ -5,13 +5,14 @@ import CodeButton from "./reusable/CodeButtons";
 import Button from "./reusable/Button";
 import productData from "../data/productDes";
 import { Link } from "react-router-dom";
+import productStat from "../data/productStat";
 
 export default function CodeSoln() {
   const [platform, setPlatform] = useState<number>(0);
   const [channel, setChannel] = useState<number>(0);
 
   return (
-    <div className="rounded-xl w-full py-28 px-16 bg-black flex flex-col justify-center items-center text-center gap-16">
+    <div className="rounded-xl w-full py-28 px-16 bg-stone-900 flex flex-col justify-center items-center text-center gap-16">
       <div className="text-5xl text-white w-3/4">
         Build flexible workflows with industry leading CPaaS APIs
       </div>
@@ -83,6 +84,24 @@ export default function CodeSoln() {
             </div>
           );
         })}
+      </div>
+      <div className="flex flex-col items-center">
+        <h1 className="text-5xl text-white w-3/4 mt-16">
+          Scalable, secure and compliant with our hyper network
+        </h1>
+        <div className="flex flex-wrap gap-2 text-white mt-8 justify-center">
+          {productStat.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className="flex p-8 flex-col justify-between gap-8 items-start bg-stone-800 w-[280px] rounded-xl"
+              >
+                <h2 className="text-4xl">{item.num}</h2>
+                <p className="text-sm text-start">{item.head}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
