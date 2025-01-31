@@ -4,7 +4,7 @@ import CodeSoln from "./CodeSoln";
 import FeatureBox from "./FeatureBox";
 import ProductsBox from "./ProductsBox";
 import Button from "./reusable/Button";
-import Services from "./Services";
+// import Services from "./Services";
 
 export default function Hero() {
   return (
