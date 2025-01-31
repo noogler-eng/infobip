@@ -2,6 +2,7 @@ import { a11yDark, CopyBlock } from "react-code-blocks";
 import data from "../data/codeData";
 import { useState } from "react";
 import CodeButton from "./reusable/CodeButtons";
+import Button from "./reusable/Button";
 
 export default function CodeSoln() {
   const [platform, setPlatform] = useState<number>(0);
@@ -15,35 +16,57 @@ export default function CodeSoln() {
       <div className="flex flex-col gap-2 items-center">
         <CodeButton
           data={["JavaScript", "Rust", "Go"]}
+          platform={platform}
+          channel={channel}
           setCateogry={setPlatform}
+          type={"platform"}
         />
-        <CodeButton data={["SMS", "WhatsApp"]} setCateogry={setChannel} />
+        <CodeButton
+          data={["SMS", "WhatsApp"]}
+          platform={platform}
+          channel={channel}
+          setCateogry={setChannel}
+          type={"channel"}
+        />
       </div>
-      <div
-        className="self-start  style={{
+      <div className="flex justify-between items-center">
+        <div
+          className="self-start  style={{
         width: '100%',
         flex: 1,
         background: a11yDark.builtInColor,
         paddingBottom: '1em',
       }}"
-      >
-        <CopyBlock
-          text={data[platform].main[channel].code}
-          language="javascript"
-          showLineNumbers={true}
-          theme={a11yDark}
-          wrapLongLines
-          customStyle={{
-            height: "250px",
-            width: "600px",
-            overflowY: "scroll",
-            margin: "0px 0.75rem",
-            borderRadius: "5px",
-            boxShadow: "1px 2px 3px rgba(0,0,0,0.35)",
-            fontSize: "0.75rem",
-            overflowX: "scroll",
-          }}
-        />
+        >
+          <CopyBlock
+            text={data[platform].main[channel].code}
+            language="javascript"
+            showLineNumbers={true}
+            theme={a11yDark}
+            wrapLongLines
+            customStyle={{
+              height: "350px",
+              width: "600px",
+              overflowY: "scroll",
+              margin: "0px 0.75rem",
+              borderRadius: "5px",
+              boxShadow: "1px 2px 3px rgba(0,0,0,0.35)",
+              fontSize: "0.75rem",
+              overflowX: "scroll",
+            }}
+          />
+        </div>
+        <div className="text-white flex flex-col gap-8 items-center">
+          <h2 className="text-5xl">Code your own solutions</h2>
+          <p className="text-lg">
+            Integrate your customers’ favorite channels and build experiences
+            your customers want, the way you want.{" "}
+          </p>
+          <div className="flex gap-4">
+            <Button text="Explore docs ->" handel={() => {}} variant="VAR2" />
+            <Button text="Explore apis ->" handel={() => {}} variant="VAR1" />
+          </div>
+        </div>
       </div>
     </div>
   );
