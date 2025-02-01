@@ -4,11 +4,11 @@ import Button from "./reusable/Button";
 export default function Patnership() {
   return (
     <div className="w-full flex items-center bg-orange-600 rounded-xl">
-      <div className="w-1/2 flex flex-col items-start gap-8 px-16 py-8">
-        <h1 className="text-6xl">
+      <div className="w-1/2 flex flex-col items-start gap-12 pl-16 py-16">
+        <h1 className="text-5xl">
           Head into the conversational future with a trusted partner...
         </h1>
-        <p className="text-2xl">
+        <p className="text-xl">
           95% of global businesses will be using conversational solutions by
           2025. We’re here to help you build leading conversational experiences
           in your market.{" "}

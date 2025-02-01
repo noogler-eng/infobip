@@ -53,6 +53,7 @@ export default function Hero() {
       <div className="w-full flex flex-col items-center justify-center mt-24 gap-12">
         <Patnership />
       </div>
+      <div className="w-full flex flex-col items-center justify-center mt-24 gap-12"></div>
     </div>
   );
 }
