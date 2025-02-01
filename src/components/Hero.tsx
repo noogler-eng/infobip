@@ -2,6 +2,7 @@ import Brands from "./Brands";
 import CardsBar from "./CardsBar";
 import CodeSoln from "./CodeSoln";
 import FeatureBox from "./FeatureBox";
+import Patnership from "./Patnership";
 import ProductsBox from "./ProductsBox";
 import Button from "./reusable/Button";
 // import Services from "./Services";
@@ -49,7 +50,9 @@ export default function Hero() {
         <ProductsBox />
       </div>
       <CodeSoln />
-      <div className="w-full flex flex-col items-center justify-center mt-24 gap-12"></div>
+      <div className="w-full flex flex-col items-center justify-center mt-24 gap-12">
+        <Patnership />
+      </div>
     </div>
   );
 }
