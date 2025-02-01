@@ -1,3 +1,4 @@
+import Blogs from "./Blogs";
 import Brands from "./Brands";
 import CardsBar from "./CardsBar";
 import CodeSoln from "./CodeSoln";
@@ -60,6 +61,9 @@ export default function Hero() {
       </div>
       <div className="w-full flex flex-col items-center justify-center mt-24 gap-12">
         <CompanyServices />
+      </div>
+      <div className="w-full flex items-center justify-center mt-24">
+        <Blogs />
       </div>
       <div className="w-full flex flex-col items-center justify-center mt-24 gap-12"></div>
     </div>
