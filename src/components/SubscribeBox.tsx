@@ -2,8 +2,8 @@ import Button from "./reusable/Button";
 
 export default function SubscribeBox() {
   return (
-    <div className="bg-stone-900 flex items-center p-12 w-full rounded-xl">
-      <h2 className="text-white text-4xl w-1/2 px-12">
+    <div className="bg-stone-900 flex items-center p-12 py-20 w-full rounded-xl">
+      <h2 className="text-white text-5xl w-1/2 px-12">
         Get the latest insights and tips to elevate your business
       </h2>
       <div className="flex flex-col gap-8 w-1/2 px-12">
