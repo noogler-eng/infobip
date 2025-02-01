@@ -1,6 +1,7 @@
 import Brands from "./Brands";
 import CardsBar from "./CardsBar";
 import CodeSoln from "./CodeSoln";
+import CompanyServices from "./CompanyServices";
 import FeatureBox from "./FeatureBox";
 import Patnership from "./Patnership";
 import ProductsBox from "./ProductsBox";
@@ -56,6 +57,9 @@ export default function Hero() {
       </div>
       <div className="w-full flex flex-col items-center justify-center mt-24 gap-12">
         <TechStackBox />
+      </div>
+      <div className="w-full flex flex-col items-center justify-center mt-24 gap-12">
+        <CompanyServices />
       </div>
       <div className="w-full flex flex-col items-center justify-center mt-24 gap-12"></div>
     </div>

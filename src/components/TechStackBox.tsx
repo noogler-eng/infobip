@@ -14,14 +14,14 @@ export default function TechStackBox() {
 
   const boxes = brands.map((item, index) => {
     return (
-      <div className="bg-stone-800 p-4" key={index}>
+      <div className="bg-stone-800 p-4 hover:bg-stone-700 rounded-xl" key={index}>
         <img src={item} width={150} />
       </div>
     );
   });
 
   return (
-    <div className="bg-stone-900 w-full p-16 flex flex-col items-center gap-10">
+    <div className="bg-stone-900 w-full p-16 flex flex-col items-center gap-10 rounded-xl">
       <h1 className="w-1/2 text-center text-5xl text-white">
         Compose your own tech stack by integrating our solutions with any app{" "}
       </h1>
