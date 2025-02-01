@@ -14,7 +14,7 @@ export default function Button({
       onClick={handel}
       className={`text-sm ${
         variant == "VAR1"
-          ? "bg-orange-600 rounded-xl py-4 px-4 font-medium"
+          ? "bg-orange-600 rounded-xl py-4 px-4 font-medium hover:bg-orange-500"
           : variant == "VAR2"
           ? "border border-black rounded-xl py-4 px-4 font-medium bg-white text-black"
           : "bg-black text-white font-semibold py-4 px-4 rounded-xl"

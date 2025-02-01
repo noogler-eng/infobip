@@ -5,6 +5,7 @@ import FeatureBox from "./FeatureBox";
 import Patnership from "./Patnership";
 import ProductsBox from "./ProductsBox";
 import Button from "./reusable/Button";
+import TechStackBox from "./TechStackBox";
 // import Services from "./Services";
 
 export default function Hero() {
@@ -52,6 +53,9 @@ export default function Hero() {
       <CodeSoln />
       <div className="w-full flex flex-col items-center justify-center mt-24 gap-12">
         <Patnership />
+      </div>
+      <div className="w-full flex flex-col items-center justify-center mt-24 gap-12">
+        <TechStackBox />
       </div>
       <div className="w-full flex flex-col items-center justify-center mt-24 gap-12"></div>
     </div>
