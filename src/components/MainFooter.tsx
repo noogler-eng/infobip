@@ -46,9 +46,9 @@ export default function MainFooter() {
         </div>
         <div className="flex flex-col gap-4 flex-grow">
           <p className="pb-3 border-b border-black w-full">Company</p>
-          <div className="flex gap-4">
+          <div className="w-full flex justify-between">
             <div className="flex flex-col gap-1 w-fit">
-              {data.footerLinks3.slice(0, 8).map((item, index) => {
+              {data.footerLinks3.slice(0, 10).map((item, index) => {
                 return (
                   <Link
                     to={item.link}
@@ -60,9 +60,9 @@ export default function MainFooter() {
                 );
               })}
             </div>{" "}
-            <div className="flex flex-col gap-1 w-full">
+            <div className="flex flex-col gap-1 w-fit">
               {data.footerLinks3
-                .slice(8, data.footerLinks3.length)
+                .slice(10, data.footerLinks3.length)
                 .map((item, index) => {
                   return (
                     <Link

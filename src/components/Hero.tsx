@@ -4,6 +4,7 @@ import CardsBar from "./CardsBar";
 import CodeSoln from "./CodeSoln";
 import CompanyServices from "./CompanyServices";
 import FeatureBox from "./FeatureBox";
+import Footer from "./Footer";
 import MainFooter from "./MainFooter";
 import Patnership from "./Patnership";
 import ProductsBox from "./ProductsBox";
@@ -73,7 +74,9 @@ export default function Hero() {
       <div className="w-full flex flex-col items-center justify-center mt-6 gap-12">
         <MainFooter />
       </div>
-      <div className="w-full flex flex-col items-center justify-center mt-6 gap-12"></div>
+      <div className="w-full flex flex-col items-center justify-center my-6 gap-12">
+        <Footer />
+      </div>
     </div>
   );
 }
